@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom recruitment app colors
+				recruit: {
+					primary: '#2563eb', // Blue
+					secondary: '#64748b', // Slate
+					success: '#10b981', // Green
+					warning: '#f59e0b', // Amber
+					danger: '#ef4444', // Red
+					light: '#f8fafc', // Slate 50
+					dark: '#0f172a', // Slate 900
+					highlight: '#3b82f6', // Blue 500
 				}
 			},
 			borderRadius: {
