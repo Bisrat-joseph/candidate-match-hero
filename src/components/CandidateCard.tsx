@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -6,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Candidate } from "@/types";
 import { Check, X, User } from "lucide-react";
 import MatchScore from "./MatchScore";
+import { cn } from "@/lib/utils";
 
 interface CandidateCardProps {
   candidate: Candidate;
@@ -95,10 +95,5 @@ const CandidateCard = ({ candidate, onSelect, selected }: CandidateCardProps) =>
     </Card>
   );
 };
-
-// Helper function to conditionally merge classes
-function cn(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default CandidateCard;
