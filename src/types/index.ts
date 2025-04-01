@@ -26,6 +26,29 @@ export interface JobRequirement {
   requiredEducation: string[];
 }
 
+export interface EmployeeAnalysis {
+  id: string;
+  name: string;
+  email: string;
+  resumeText: string;
+  currentRole: string;
+  department: string;
+  skills: string[];
+  experience: number;
+  education: string[];
+  strengths: string[];
+  areasForImprovement: string[];
+  careerPathSuggestions: {
+    role: string;
+    matchScore: number;
+    requiredSkills: string[];
+    hasRequiredSkills: boolean[];
+    timeToReady: string;
+  }[];
+  trainingRecommendations: string[];
+  performanceFeedback: string;
+}
+
 export enum AnalysisStatus {
   IDLE = 'idle',
   LOADING = 'loading',
