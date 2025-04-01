@@ -12,6 +12,7 @@ import ResumeUploader from "@/components/ResumeUploader";
 import JobRequirements from "@/components/JobRequirements";
 import CandidateCard from "@/components/CandidateCard";
 import ResultsTable from "@/components/ResultsTable";
+import MatchScore from "@/components/MatchScore";
 import { v4 as uuidv4 } from "uuid";
 
 const Index = () => {
